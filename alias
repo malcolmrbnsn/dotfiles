@@ -1,0 +1,42 @@
+alias vi='nvim'
+alias n='node'
+alias gs='git status'
+alias ga='git add'
+alias gp="git push"
+alias sudo="sudo"
+
+alias yt-tv="youtube-dl \
+     -o \"/mnt/ntfs/media/family/tv/%(series)s/%(season_number)s - %(season)s/%(episode_number)s - %(episode)s.%(ext)s\""
+alias yt-dl="youtube-dl \
+    -f \"best\" \
+    --add-metadata \
+    --embed-subs \
+    --embed-thumb \
+    --embed-thumbnail \
+    --fragment-retries 10 \
+    --ignore-errors \
+    --playlist-reverse \
+    --retries 10 \
+    --sub-lang=en \
+    --write-all-thumbnails \
+    --write-annotations \
+    --write-auto-sub \
+    --write-description \
+    --write-info-json \
+    --write-sub \
+    --write-thumbnail \
+    --xattrs \
+    --output \"/mnt/EXT/youtube/%(uploader)s (%(uploader_id)s)/%(upload_date)s - %(id)s - %(title)s/%(upload_date)s - %(id)s - %(title)s.%(ext)s\""
+
+alias rmf='rm -rf'
+alias ..="cd .."
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+alias dcd="cd /containers/homelab"
+alias d='docker'
+alias dl='docker logs -f '
+alias dr='docker restart'
+alias ds='docker stop'
+alias dc='docker-compose'
+alias dcbuild='docker-compose up --build --remove-orphans -d'
+alias dcrun='docker-compose up --remove-orphans -d'
